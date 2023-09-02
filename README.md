@@ -1,4 +1,5 @@
-<br>
+
+![Currency](https://github.com/PioBuczek/CurrencyWallet/assets/137912290/43ff1188-fd81-4753-8372-d3ed794be642)
 
 ### A few words about project
 This project, is a currency wallet, which show actual amount of your currencies and balance which is show in PLN currency. On the main page there is a list of the currency and their price. In this application, you could add new positions and substract previous positions. Moreover, as you add another item to your portfolio, a pie chart is generated that shows the percentage composition of your portfolio.
