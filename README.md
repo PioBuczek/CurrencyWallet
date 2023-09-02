@@ -20,7 +20,7 @@ Then you need to go into a higher file, you need the command:
 <div class="termy">
 
 ```console
-cd CryptoWalletPython
+cd .\CurrencyWallet\
 ```
 </div> 
 
