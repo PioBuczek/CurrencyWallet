@@ -1,0 +1,43 @@
+{% extends 'main.html'%}
+
+{% block tytul %} Currency List {% endblock %}
+
+{% block strona %}
+
+<div class="main_content" class="container">
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <h3>Currency List</h3>
+      <table class="table table-dark shorter-table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" class="text-center">Name</th>
+            <th scope="col">Currency</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for currency in currencies %}
+          <tr>
+            <td>{{ forloop.counter }}</td>
+            <td class="text-center">{{ currency.name }}</td>
+            <td>{{ currency.symbol }}</td>
+            <td>{{ currency.price }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm">
+      <a href="{% url 'wallet' %}" class="btn btn-primary"> Wallet</a><br><br>
+      <a href="{% url 'add' %}" class="btn btn-primary">Add coin</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
